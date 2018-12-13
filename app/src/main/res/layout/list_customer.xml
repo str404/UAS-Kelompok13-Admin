@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview_id"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="4dp"
+    android:layout_margin="5dp"
+    cardview:cardBackgroundColor="@color/colorAccent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:hint="Nama"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imgCustomer"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/tvNama"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/default_user"
+            />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvIdPembeli"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/imgPembeli"-->
+        <!--android:layout_below="@id/tvIdPembelian"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_toRightOf="@+id/imgPembeli"-->
+        <!--android:hint="Id Pembeli"-->
+        <!--android:textSize="20sp"/>-->
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgCustomer"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgCustomer"
+            android:hint="Alamat :"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvAlamatContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAlamat"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgCustomer"
+            android:hint="Alamat"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvTelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAlamatContent"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgCustomer"
+            android:hint="Telp :"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvTelpContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTelp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgCustomer"
+            android:hint="081252547835"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

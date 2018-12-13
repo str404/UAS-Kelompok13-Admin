@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rp.satria.sepatugucci">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity android:name=".TransaksiActivity">
+        </activity>
+        <activity
+            android:name=".LayarDetail"
+            android:label="Detail Trans Transaksi " />
+        <activity
+            android:name=".LayarListCustomer"
+            android:label="List Pembeli" />
+        <activity
+            android:name=".LayarInsertCustomer"
+            android:label="Insert Customer" />
+        <activity
+            android:name=".LayarEditPembeli"
+            android:label="Edit Customer" />
+        <activity
+            android:name=".LayarListSepatu"
+            android:label="List Sepatu" />
+        <activity android:name=".LayarInsertPembeli" />
+        <activity
+            android:name=".LayarInsertSepatu"
+            android:label="Insert Sepatu" />
+        <activity
+            android:name=".LayarEditSepatu"
+            android:label="Edit Sepatu" />
+    </application>
+
+</manifest>

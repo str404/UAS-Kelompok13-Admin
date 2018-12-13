@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_put_del_customer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".LayarInsertCustomer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgAddPhotoId"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_user" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btAddPhotoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgAddPhotoId"
+            android:layout_centerHorizontal="true"
+            android:src="@android:drawable/ic_menu_upload"
+            android:text="Pilih Foto" />
+
+        <TextView
+            android:id="@+id/tvAddNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btAddPhotoId"
+            android:layout_marginRight="50dp"
+            android:text="Nama :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddNamaCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddNama"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddNama"
+            android:hint="Nama" />
+
+        <TextView
+            android:id="@+id/tvAddAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddNama"
+            android:text="Alamat :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddAlamatCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddAlamat"
+            android:layout_alignLeft="@+id/edtAddNamaCustomer"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddAlamat"
+            android:hint="Alamat" />
+
+        <TextView
+            android:id="@+id/tvAddTelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddAlamat"
+            android:text="Telepon :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddTelpCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddTelp"
+            android:layout_alignLeft="@+id/edtAddNamaCustomer"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddTelp"
+            android:hint="Telp"
+            android:inputType="phone" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddTelp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btAddData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_save"
+                android:text="Insert"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btAddBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_media_previous"
+                android:text="Back"/>
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvAddMessage"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_below="@+id/LinearLayout"-->
+        <!--android:hint="Pesan"-->
+        <!--android:inputType="textMultiLine"-->
+        <!--android:textSize="20dp"/>-->
+    </RelativeLayout>
+</ScrollView>

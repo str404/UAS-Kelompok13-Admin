@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_transaksi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@android:drawable/ic_input_get"
+            android:layout_margin="16dp"
+            android:text="Get"/>
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/btInsert"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end|bottom"-->
+            <!--android:src="@android:drawable/ic_input_add"-->
+            <!--android:layout_margin="16dp"-->
+        <!--android:text="Insert"/>-->
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/btUpdate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end|bottom"-->
+            <!--android:src="@android:drawable/ic_menu_edit"-->
+            <!--android:layout_margin="16dp"-->
+        <!--android:text="Update"/>-->
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/btDelete"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end|bottom"-->
+            <!--android:src="@android:drawable/ic_input_delete"-->
+            <!--android:layout_margin="16dp"-->
+        <!--android:text="Delete"/>-->
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

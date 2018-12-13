@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_put_del_pembeli"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".LayarEditPembeli">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgPhotoId"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_user"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btPhotoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPhotoId"
+            android:layout_centerHorizontal="true"
+            android:src="@android:drawable/ic_menu_upload"
+            android:text="Select Photo Id"/>
+
+        <TextView
+            android:id="@+id/tvIdSepatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btPhotoId"
+            android:layout_marginTop="10dp"
+            android:text="ID Pembeli :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtIdSepatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvIdSepatu"
+            android:layout_toRightOf="@+id/tvIdSepatu"
+            android:hint="id_sepatu"
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIdSepatu"
+            android:text="Nama :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtNamaSepatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvNama"
+            android:layout_alignLeft="@+id/edtIdSepatu"
+            android:layout_toRightOf="@+id/tvNama"
+            android:hint="Nama"/>
+
+        <TextView
+            android:id="@+id/tvTipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNama"
+            android:text="Tipe :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtTipeSepatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTipe"
+            android:layout_alignLeft="@+id/edtIdSepatu"
+            android:layout_toRightOf="@+id/tvTipe"
+            android:hint="Tipe"/>
+
+        <TextView
+            android:id="@+id/tvUkuran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTipe"
+            android:text="Tipe :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtUkuranSepatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUkuran"
+            android:layout_alignLeft="@+id/edtIdSepatu"
+            android:layout_toRightOf="@+id/tvUkuran"
+            android:hint="Ukuran"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUkuran"
+            android:text="Ukuran :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtHargaSepatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvHarga"
+            android:layout_alignLeft="@+id/edtIdSepatu"
+            android:layout_toRightOf="@+id/tvHarga"
+            android:hint="Harga"
+            android:inputType="number"/>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHarga"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_edit"
+                android:text="Update"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_input_delete"
+                android:text="Delete"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_media_rew"
+                android:text="Back"/>
+        </LinearLayout>
+        <!--<TextView-->
+        <!--android:id="@+id/tvMessage"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Pesan"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_below="@+id/LinearLayout"-->
+        <!--android:textSize="20dp"-->
+        <!--android:inputType="textMultiLine"/>-->
+    </RelativeLayout>
+</ScrollView>

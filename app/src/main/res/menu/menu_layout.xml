@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/TambahTransaksi"
+        android:title="Tambah Transaksi"/>
+    <item android:id="@+id/ListTransaksi"
+        android:title="Menu List Transaksi"/>
+    <item android:id="@+id/ListCustomer"
+        android:title="List Customer"/>
+    <item android:id="@+id/InsertDataCustomer"
+        android:title="Menu Insert Data Customer"/>
+    <item android:id="@+id/ListSepatu"
+        android:title="List Sepatu"/>
+    <item android:id="@+id/InsertDataSepatu"
+    android:title="Menu Insert Data Sepatu"/>
+    <item android:id="@+id/Logout"
+        android:title="Logout"/>
+</menu>

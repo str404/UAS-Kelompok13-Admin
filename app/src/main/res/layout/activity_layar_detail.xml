@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layardetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".LayarDetail">
+    <TextView
+        android:id="@+id/tvIdTransaksi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Transaksi : "
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvIdCustomer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Customer : "
+        android:layout_below="@id/tvIdTransaksi2"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvTanggalTransaksi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal : "
+        android:layout_below="@id/tvIdCustomer2"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvTotalHarga2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Harga : "
+        android:layout_below="@id/tvTanggalTransaksi2"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvIdSepatu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Sepatu : "
+        android:layout_below="@id/tvTotalHarga2"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edtIdTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="id pembelian"
+        android:layout_toRightOf="@+id/tvIdTransaksi2"
+        android:layout_alignBaseline="@+id/tvIdTransaksi2"/>
+    <EditText
+        android:id="@+id/edtIdCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="id customer"
+        android:layout_alignBaseline="@+id/tvIdCustomer2"
+        android:layout_alignLeft="@+id/edtIdTransaksi"/>
+    <EditText
+        android:id="@+id/edtTanggalTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Transaksi"
+        android:layout_alignBaseline="@+id/tvTanggalTransaksi2"
+        android:layout_alignLeft="@+id/edtIdTransaksi"
+        android:inputType="date"/>
+    <EditText
+        android:id="@+id/edtTotalHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Total Harga"
+        android:layout_alignBaseline="@+id/tvTotalHarga2"
+        android:layout_alignLeft="@+id/edtIdTransaksi"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/edtIdSepatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Id Sepatu"
+        android:layout_alignBaseline="@+id/tvIdSepatu2"
+        android:layout_alignLeft="@+id/edtIdTransaksi"/>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="168dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btInsert2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="10dp"
+            android:src="@android:drawable/ic_input_add"
+            android:text="Insert" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btUpdate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:src="@android:drawable/ic_menu_set_as"
+            android:text="Update" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btDelete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:src="@android:drawable/ic_input_delete"
+            android:text="Delete" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btBack"
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:text="Back" />
+    </LinearLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/tvMessage2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Pesan Muncul disini"-->
+    <!--android:layout_below="@+id/Linearlayout2"-->
+    <!--android:textSize="20sp"-->
+    <!--android:inputType="textMultiLine"/>-->
+</RelativeLayout>
