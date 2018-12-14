@@ -9,18 +9,22 @@ Readme.md
 ## Deskripsi
 Aplikasi "Gucci Shoes " adalah aplikasi yang berisi tentang daftar-daftar sepatu bermerk gucci. Dimana untuk memasuki aplikasi ini harus login terlebih dahulu untuk bisa masuk ke halaman home yang berisi list-list sepatu. Kemudian pelanggan dapat melakukan pemesanan .
 
-<!-- ## Screenshots
-![Login](https://github.com/str404/Gucci-Shoes-List/blob/master/imageapp/login.png)
+## Screenshots
+![1](https://github.com/str404/UAS-Kelompok13-Admin/blob/master/gambar/Screenshot_2018-12-14-09-26-39-472_rp.satria.sepatugucci.png)
 
-![Home/Tampilan Awal](https://github.com/str404/Gucci-Shoes-List/blob/master/imageapp/home.png)
+![2](https://github.com/str404/UAS-Kelompok13-Admin/blob/master/gambar/Screenshot_2018-12-14-09-26-56-414_rp.satria.sepatugucci.png)
 
-![Detail](https://github.com/str404/Gucci-Shoes-List/blob/master/imageapp/detail.png)
+![3](https://github.com/str404/UAS-Kelompok13-Admin/blob/master/gambar/Screenshot_2018-12-14-09-27-00-973_rp.satria.sepatugucci.png)
 
-![Tambah/add](https://github.com/str404/Gucci-Shoes-List/blob/master/imageapp/insert.png)
+![4](https://github.com/str404/UAS-Kelompok13-Admin/blob/master/gambar/Screenshot_2018-12-14-09-27-19-240_rp.satria.sepatugucci.png)
 
-![Edit/rubah](https://github.com/str404/Gucci-Shoes-List/blob/master/imageapp/edit.png)
+![5](https://github.com/str404/UAS-Kelompok13-Admin/blob/master/gambar/Screenshot_2018-12-14-09-27-25-570_rp.satria.sepatugucci.png)
 
-![OnClick](https://github.com/str404/Gucci-Shoes-List/blob/master/imageapp/menu.png) -->
+![6](https://github.com/str404/UAS-Kelompok13-Admin/blob/master/gambar/Screenshot_2018-12-14-09-27-46-382_rp.satria.sepatugucci.png)
+
+![7](https://github.com/str404/UAS-Kelompok13-Admin/blob/master/gambar/Screenshot_2018-12-14-09-27-55-833_rp.satria.sepatugucci.png)
+
+![8](https://github.com/str404/UAS-Kelompok13-Admin/blob/master/gambar/Screenshot_2018-12-14-09-28-15-221_rp.satria.sepatugucci.png)
 
 ## Android OS dan Level
 min Sdk version yang digunakan adalah 25
