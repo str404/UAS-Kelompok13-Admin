@@ -34,7 +34,7 @@ public class LayarInsertCustomer extends AppCompatActivity {
     ImageView mImageView;
     FloatingActionButton btAddPhotoId, btAddBack, btAddData;
     EditText edtAddIdPembeli, edtAddNamaCustomer, edtAddAlamatCustomer;
-    EditText edtAddTelpCustomer;
+    EditText edtAddTelpCustomer, edtAddUsernameCustomer, edtAddPasswordCustomer;
     //    TextView tvAddMessage;
     String imagePath = "";
 
@@ -50,6 +50,8 @@ public class LayarInsertCustomer extends AppCompatActivity {
         edtAddNamaCustomer = (EditText) findViewById(R.id.edtAddNamaCustomer);
         edtAddAlamatCustomer = (EditText) findViewById(R.id.edtAddAlamatCustomer);
         edtAddTelpCustomer = (EditText) findViewById(R.id.edtAddTelpCustomer);
+        edtAddUsernameCustomer = findViewById(R.id.edtAddUsernameCustomer);
+        edtAddPasswordCustomer = findViewById(R.id.edtAddPasswordCustomer);
 
         btAddData = findViewById(R.id.btAddData);
         btAddBack = findViewById(R.id.btAddBack);
@@ -78,10 +80,14 @@ public class LayarInsertCustomer extends AppCompatActivity {
                         (edtAddNamaCustomer.getText().toString().isEmpty())?"":edtAddAlamatCustomer.getText().toString());
                 RequestBody reqTelp = MultipartBody.create(MediaType.parse("multipart/form-data"),
                         (edtAddNamaCustomer.getText().toString().isEmpty())?"":edtAddTelpCustomer.getText().toString());
+                RequestBody reqUsername = MultipartBody.create(MediaType.parse("multipart/form-data"),
+                        (edtAddNamaCustomer.getText().toString().isEmpty())?"":edtAddUsernameCustomer.getText().toString());
+                RequestBody reqPassword = MultipartBody.create(MediaType.parse("multipart/form-data"),
+                        (edtAddNamaCustomer.getText().toString().isEmpty())?"":edtAddPasswordCustomer.getText().toString());
                 RequestBody reqAction = MultipartBody.create(MediaType.parse("multipart/form-data"),
                         "insert");
                 Call<GetCustomer> mCustomerCall = mApiInterface.postGetCustomer(body, reqNama,
-                        reqAlamat, reqTelp, reqAction );
+                        reqAlamat, reqTelp, reqUsername, reqPassword, reqAction );
                 mCustomerCall.enqueue(new Callback<GetCustomer>() {
                     @Override
                     public void onResponse(Call<GetCustomer> call, Response<GetCustomer> response) {
@@ -100,6 +106,8 @@ public class LayarInsertCustomer extends AppCompatActivity {
                                     "nama = "+response.body().getResult().get(0).getNama()+"\n"+
                                     "alamat = "+response.body().getResult().get(0).getAlamat()+"\n"+
                                     "telp = "+response.body().getResult().get(0).getTelp()+"\n"+
+                                    "username = "+response.body().getResult().get(0).getTelp()+"\n"+
+                                    "password = "+response.body().getResult().get(0).getTelp()+"\n"+
                                     "photo_url = "+response.body().getResult().get(0).getPhotoUrl()
                                     +"\n";
                             Toast.makeText(getApplicationContext(), "Retrofit Insert \n Status = "+response.body().getStatus()+"\n"+

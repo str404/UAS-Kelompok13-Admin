@@ -25,7 +25,18 @@
             android:hint="Nama"
             android:textColor="@android:color/black"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:hint="Username"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imgCustomer"
@@ -33,8 +44,7 @@
             android:layout_height="150dp"
             android:layout_below="@+id/tvNama"
             android:layout_marginTop="10dp"
-            android:src="@drawable/default_user"
-            />
+            android:src="@drawable/default_user" />
 
         <!--<TextView-->
         <!--android:id="@+id/tvIdPembeli"-->
@@ -56,7 +66,7 @@
             android:layout_toRightOf="@+id/imgCustomer"
             android:hint="Alamat :"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvAlamatContent"
@@ -66,7 +76,7 @@
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/imgCustomer"
             android:hint="Alamat"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tvTelp"
@@ -77,7 +87,8 @@
             android:layout_toRightOf="@+id/imgCustomer"
             android:hint="Telp :"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tvTelpContent"
             android:layout_width="wrap_content"
@@ -86,6 +97,6 @@
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/imgCustomer"
             android:hint="081252547835"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
     </RelativeLayout>
 </android.support.v7.widget.CardView>

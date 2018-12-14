@@ -138,7 +138,8 @@ public class LayarDetail extends AppCompatActivity {
                         }
                     });
                 }else{
-                    tvMessage.setText("id_transaksi harus diisi");
+                    Toast.makeText(getApplicationContext(), "id_transaksi harus diisi",
+                            Toast.LENGTH_LONG).show();
                 }
             }
         });

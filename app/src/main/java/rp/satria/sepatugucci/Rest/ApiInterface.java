@@ -52,6 +52,8 @@ public interface ApiInterface {
             @Part("nama") RequestBody nama,
             @Part("alamat") RequestBody alamat,
             @Part("telp") RequestBody telpn,
+            @Part("username") RequestBody username,
+            @Part("password") RequestBody password,
             @Part("action") RequestBody action
     );
 
@@ -63,6 +65,8 @@ public interface ApiInterface {
             @Part("nama") RequestBody nama,
             @Part("alamat") RequestBody alamat,
             @Part("telp") RequestBody telpn,
+            @Part("username") RequestBody username,
+            @Part("password") RequestBody password,
             @Part("action") RequestBody action
     );
 

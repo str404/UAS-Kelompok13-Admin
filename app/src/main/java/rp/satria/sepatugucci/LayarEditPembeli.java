@@ -31,7 +31,7 @@ import rp.satria.sepatugucci.Rest.ApiInterface;
 public class LayarEditPembeli extends AppCompatActivity {
 
     ImageView mPhotoUrl;
-    EditText edtIdCustomer, edtNama, edtAlamat, edtTelp;
+    EditText edtIdCustomer, edtNama, edtAlamat, edtTelp, edtUsername, edtPassword;
     TextView tvMessage;
     Context mContext;
     FloatingActionButton btUpdate, btDelete, btBack, btPhotoUrl;
@@ -49,6 +49,8 @@ public class LayarEditPembeli extends AppCompatActivity {
         edtNama = (EditText) findViewById(R.id.edtNamaCustomer);
         edtAlamat = (EditText) findViewById(R.id.edtAlamatCustomer);
         edtTelp = (EditText) findViewById(R.id.edtTelpnCustomer);
+        edtUsername= findViewById(R.id.edtUsernameCustomer);
+        edtPassword = findViewById(R.id.edtPasswordCustomer);
 
 //        tvMessage = (TextView) findViewById(R.id.tvMessage);
 
@@ -63,6 +65,8 @@ public class LayarEditPembeli extends AppCompatActivity {
         edtNama.setText(mIntent.getStringExtra("nama"));
         edtAlamat.setText(mIntent.getStringExtra("alamat"));
         edtTelp.setText(mIntent.getStringExtra("telp"));
+        edtUsername.setText(mIntent.getStringExtra("username"));
+        edtPassword.setText(mIntent.getStringExtra("password"));
 
 //        if (mIntent.getStringExtra("photo_url").length()>0) Picasso.with(mContext).load
 // (ApiClient.BASE_URL + mIntent.getStringExtra("photo_url")).into(mPhotoUrl);
@@ -120,12 +124,20 @@ public class LayarEditPembeli extends AppCompatActivity {
                         MultipartBody.create(MediaType.parse("multipart/form-data"),
                                 (edtTelp.getText().toString().isEmpty())?
                                         "" : edtTelp.getText().toString());
+                RequestBody reqUsername =
+                        MultipartBody.create(MediaType.parse("multipart/form-data"),
+                                (edtUsername.getText().toString().isEmpty())?
+                                        "" : edtUsername.getText().toString());
+                RequestBody reqPassword =
+                        MultipartBody.create(MediaType.parse("multipart/form-data"),
+                                (edtPassword.getText().toString().isEmpty())?
+                                        "" : edtPassword.getText().toString());
 
                 RequestBody reqAction =
                         MultipartBody.create(MediaType.parse("multipart/form-data"), "update");
 
                 Call<GetCustomer> callUpdate = mApiInterface.putGetCustomer(body, reqIdCustomer, reqNama,
-                        reqAlamat, reqTelp, reqAction);
+                        reqAlamat, reqTelp, reqUsername, reqPassword, reqAction);
 
                 callUpdate.enqueue(new Callback<GetCustomer>() {
                     @Override
@@ -145,6 +157,8 @@ public class LayarEditPembeli extends AppCompatActivity {
                                     "nama = "+response.body().getResult().get(0).getNama()+"\n"+
                                     "alamat = "+response.body().getResult().get(0).getAlamat()+"\n"+
                                     "telp = "+response.body().getResult().get(0).getTelp()+"\n"+
+                                    "username = "+response.body().getResult().get(0).getTelp()+"\n"+
+                                    "password = "+response.body().getResult().get(0).getTelp()+"\n"+
                                     "photo_url = "+response.body().getResult().get(0).getPhotoUrl()
                                     +"\n";
                             Toast.makeText(getApplicationContext(), "Retrofit Update \n Status = "+response.body().getStatus()+"\n"+

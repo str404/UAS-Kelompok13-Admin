@@ -38,6 +38,8 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.Custom
         holder.tvNama.setText(listCustomer.get(position).getNama());
         holder.tvAlamat.setText(listCustomer.get(position).getAlamat());
         holder.tvTelp.setText(listCustomer.get(position).getTelp());
+        holder.tvUsername.setText(listCustomer.get(position).getUsername());
+//        holder.tvPassword.setText(listCustomer.get(position).getPassword());
         if (listCustomer.get(position).getPhotoUrl() != null ){
 //            Picasso.with(holder.itemView.getContext()).load(ApiClient.BASE_URL+listPembeli.get(position).getPhotoId())
 //                    .into(holder.mPhotoURL);
@@ -60,6 +62,8 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.Custom
                 intent.putExtra("alamat", listCustomer.get(position).getAlamat());
                 intent.putExtra("telp", listCustomer.get(position).getTelp());
                 intent.putExtra("photo_url", listCustomer.get(position).getPhotoUrl());
+                intent.putExtra("username", listCustomer.get(position).getUsername());
+                intent.putExtra("password", listCustomer.get(position).getPassword());
                 view.getContext().startActivity(intent);
             }
         });
@@ -72,7 +76,7 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.Custom
 
     public class CustomerViewHolder extends RecyclerView.ViewHolder {
         ImageView mPhotoURL;
-        TextView tvNama, tvAlamat, tvTelp;
+        TextView tvNama, tvAlamat, tvTelp, tvUsername, tvPassword;
 //        tvIdPembeli,
 
 
@@ -83,6 +87,8 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.Custom
             tvNama = (TextView) itemView.findViewById(R.id.tvNama);
             tvAlamat = (TextView) itemView.findViewById(R.id.tvAlamatContent);
             tvTelp = (TextView) itemView.findViewById(R.id.tvTelpContent);
+            tvUsername = (TextView) itemView.findViewById(R.id.tvUsername);
+//            tvPassword = (TextView) itemView.findViewById(R.id.tvPassword);
         }
     }
 }

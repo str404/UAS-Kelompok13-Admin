@@ -84,11 +84,49 @@
             android:hint="Telp"
             android:inputType="phone" />
 
+        <TextView
+            android:id="@+id/tvAddUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddTelp"
+            android:text="Username :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddUsernameCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddUsername"
+            android:layout_alignLeft="@+id/edtAddNamaCustomer"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddUsername"
+            android:hint="Username"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvAddPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddUsername"
+            android:text="Password :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddPasswordCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddPassword"
+            android:layout_alignLeft="@+id/edtAddNamaCustomer"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddPassword"
+            android:hint="Password"
+            android:inputType="text" />
+
         <LinearLayout
             android:id="@+id/LinearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvAddTelp"
+            android:layout_below="@+id/tvAddPassword"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"

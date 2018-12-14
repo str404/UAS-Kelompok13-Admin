@@ -98,12 +98,51 @@
             android:layout_toRightOf="@+id/tvTelpn"
             android:hint="Telpn"
             android:inputType="phone"/>
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTelpn"
+            android:text="Username :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtUsernameCustomer"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUsername"
+            android:layout_alignLeft="@+id/edtNamaCustomer"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="147dp"
+            android:layout_toRightOf="@+id/tvUsername"
+            android:hint="Username"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUsername"
+            android:text="Password :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtPasswordCustomer"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvPassword"
+            android:layout_alignLeft="@+id/edtNamaCustomer"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="146dp"
+            android:layout_toRightOf="@+id/tvPassword"
+            android:hint="Password"
+            android:inputType="text" />
 
         <LinearLayout
             android:id="@+id/LinearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvTelpn"
+            android:layout_below="@+id/tvPassword"
             android:layout_centerHorizontal="true"
             android:orientation="horizontal"
             android:layout_marginTop="5dp"

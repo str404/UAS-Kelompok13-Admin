@@ -13,15 +13,21 @@ public class customer {
     private String telp;
     @SerializedName("photo_url")
     private String photoUrl;
+    @SerializedName("username")
+    private String username;
+    @SerializedName("password")
+    private String password;
     private String action;
 
-    public customer(String idCustomer, String nama, String alamat, String telp, String photoUrl, String
+    public customer(String idCustomer, String nama, String alamat, String telp, String photoUrl, String username, String password, String
             action) {
         this.idCustomer = idCustomer;
         this.nama = nama;
         this.alamat = alamat;
         this.telp = telp;
         this.photoUrl = photoUrl;
+        this.username = username;
+        this.password = password;
         this.action = action;
     }
 
@@ -63,6 +69,22 @@ public class customer {
 
     public void setPhotoUrl(String photoUrl) {
         this.photoUrl = photoUrl;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getAction() {
