@@ -68,8 +68,8 @@ min Sdk version yang digunakan adalah 25
 
 ## Referensi
 * [StackOverflow](https://stackoverflow.com/) - Referensi apabila terjadi masalah dalam program
-* [BitBucketDosen](https://bitbucket.org/mcrury/rest-server-andromeda/) - Referensi dalam membuat Rest
-* [Github Fahmiko](https://bitbucket.org/mcrury/andromeda/) - Untuk Referensi dalam membuat program
+* [BitBucket Dosen](https://bitbucket.org/mcrury/rest-server-andromeda/) - Referensi dalam membuat Rest
+* [Github Dosen](https://bitbucket.org/mcrury/andromeda/) - Untuk Referensi dalam membuat program
 
 ## Lisensi
 Audi_Satria.Corp 2018. All rights reserved. 
